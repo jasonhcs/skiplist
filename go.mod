@@ -1,5 +1,5 @@
-module github.com/huandu/skiplist
+module skiplist
 
-go 1.12
+go 1.18
 
-require github.com/huandu/go-assert v1.1.5
+require github.com/davecgh/go-spew v1.1.1

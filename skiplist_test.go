@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/huandu/go-assert"
+	"skiplist/go-assert"
 )
 
 func TestBasicCRUD(t *testing.T) {

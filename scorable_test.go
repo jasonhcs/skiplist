@@ -6,7 +6,7 @@ package skiplist
 import (
 	"testing"
 
-	"github.com/huandu/go-assert"
+	"skiplist/go-assert"
 )
 
 func TestKeyScore(t *testing.T) {
