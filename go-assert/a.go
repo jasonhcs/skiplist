@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"testing"
 
-	"skiplist/go-assert/internal/assertion"
+	"github.com/jasonhcs/skiplist/go-assert/internal/assertion"
 )
 
 // The A is a wrapper of testing.T with some extra help methods.

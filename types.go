@@ -240,7 +240,7 @@ func (kt keyType) CalcScore(key interface{}) float64 {
 				name = "[]byte"
 			}
 
-			panic(fmt.Errorf("skiplist: key type must be %v, but actual type is %v", name, k.Type()))
+			panic(fmt.Errorf("github.com/jasonhcs/skiplist: key type must be %v, but actual type is %v", name, k.Type()))
 		}
 	}
 

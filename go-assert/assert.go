@@ -10,7 +10,7 @@ package assert
 import (
 	"testing"
 
-	"skiplist/go-assert/internal/assertion"
+	"github.com/jasonhcs/skiplist/go-assert/internal/assertion"
 )
 
 // Assert tests expr and call `t.Fatalf` to terminate test case if expr is false-equivalent value.
@@ -18,7 +18,7 @@ import (
 //
 // Sample code.
 //
-//     import "skiplist/go-assert"
+//     import "github.com/jasonhcs/skiplist/go-assert"
 //
 //     func TestSomething(t *testing.T) {
 //         a, b := 1, 2
@@ -43,7 +43,7 @@ func Assert(t *testing.T, expr interface{}) {
 //
 // Sample code.
 //
-//     import "skiplist/go-assert"
+//     import "github.com/jasonhcs/skiplist/go-assert"
 //
 //     func TestSomething(t *testing.T) {
 //         assert.Equal(t, []int{1,2}, []int{1})
@@ -71,7 +71,7 @@ func Equal(t *testing.T, v1, v2 interface{}) {
 //
 // Sample code.
 //
-//     import "skiplist/go-assert"
+//     import "github.com/jasonhcs/skiplist/go-assert"
 //
 //     func TestSomething(t *testing.T) {
 //         assert.NotEqual(t, []int{1}, []int{1})
@@ -99,7 +99,7 @@ func NotEqual(t *testing.T, v1, v2 interface{}) {
 //
 // Sample code.
 //
-//     import "skiplist/go-assert"
+//     import "github.com/jasonhcs/skiplist/go-assert"
 //
 //     func TestSomething(t *testing.T) {
 //         assert.AssertEqual(t, []int{1,2}, []int{1})
@@ -130,7 +130,7 @@ func AssertEqual(t *testing.T, v1, v2 interface{}) {
 //
 // Sample code.
 //
-//     import "skiplist/go-assert"
+//     import "github.com/jasonhcs/skiplist/go-assert"
 //
 //     func TestSomething(t *testing.T) {
 //         assert.AssertNotEqual(t, []int{1}, []int{1})

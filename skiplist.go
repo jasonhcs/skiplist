@@ -64,7 +64,7 @@ type SkipList struct {
 // We can create custom comparable by implementing Comparable interface.
 func New(comparable Comparable) *SkipList {
 	if DefaultMaxLevel <= 0 {
-		panic("skiplist default level must not be zero or negative")
+		panic("github.com/jasonhcs/skiplist default level must not be zero or negative")
 	}
 
 	source := rand.NewSource(time.Now().UnixNano())
@@ -348,7 +348,7 @@ func (list *SkipList) MustGetValue(key interface{}) interface{} {
 	element := list.Get(key)
 
 	if element == nil {
-		panic(fmt.Errorf("skiplist: cannot find key `%v` in skiplist", key))
+		panic(fmt.Errorf("github.com/jasonhcs/skiplist: cannot find key `%v` in skiplist", key))
 	}
 
 	return element.Value
@@ -464,7 +464,7 @@ func (list *SkipList) MaxLevel() int {
 // If level is not greater than 0, just panic.
 func (list *SkipList) SetMaxLevel(level int) (old int) {
 	if level <= 0 {
-		panic(fmt.Errorf("skiplist: level must be larger than 0 (current is %v)", level))
+		panic(fmt.Errorf("github.com/jasonhcs/skiplist: level must be larger than 0 (current is %v)", level))
 	}
 
 	list.maxLevel = level

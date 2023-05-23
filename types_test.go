@@ -6,7 +6,7 @@ package skiplist
 import (
 	"testing"
 
-	"skiplist/go-assert"
+	"github.com/jasonhcs/skiplist/go-assert"
 )
 
 func TestCompareTypes(t *testing.T) {

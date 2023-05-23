@@ -1,4 +1,4 @@
-module skiplist
+module github.com/jasonhcs/skiplist
 
 go 1.18
 
