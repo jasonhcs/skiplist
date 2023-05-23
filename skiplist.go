@@ -531,3 +531,23 @@ func (list *SkipList) calcScore(key interface{}) (score float64) {
 	score = list.comparable.CalcScore(key)
 	return
 }
+
+func (list *SkipList) UpList() []*Element {
+	retList := []*Element{}
+	curNode := list.Front()
+	for curNode != nil {
+		retList = append(retList, curNode)
+		curNode = curNode.Next()
+	}
+	return retList
+}
+
+func (list *SkipList) DownList() []*Element {
+	retList := []*Element{}
+	curNode := list.Back()
+	for curNode != nil {
+		retList = append(retList, curNode)
+		curNode = curNode.Prev()
+	}
+	return retList
+}
